@@ -13,6 +13,7 @@ button,input{font:inherit}button{cursor:pointer}
 h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:"Space Grotesk",sans-serif}
 h1{font-size:clamp(44px,8vw,78px);line-height:1.04;letter-spacing:-.075em;margin:18px 0 15px;font-weight:700}h1 span{color:#6159e8}
 .intro-copy{font-size:16px;color:#6b6c64;margin-bottom:25px}.date-line{display:inline-block;margin:0;padding:10px 15px;background:#b8f271;border:2px solid #23251f;border-radius:8px;box-shadow:3px 3px 0 #23251f;font-size:13px;font-weight:700}
+.has-tasks .intro{padding:8px 0 24px}.has-tasks .eyebrow,.has-tasks h1,.has-tasks .intro-copy{display:none}
 .list-panel{background:#fff;border:2px solid #23251f;border-radius:14px;box-shadow:7px 7px 0 #23251f;padding:28px 30px 32px}
 .panel-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:25px}.section-kicker{color:#6159e8}.panel-head h2{display:flex;align-items:center;gap:10px;margin:7px 0 0;font-size:25px;letter-spacing:-.05em}
 .count-badge{min-width:27px;height:27px;display:grid;place-items:center;border:1.5px solid #23251f;border-radius:7px;background:#f6f2e9;font:700 12px "DM Sans",sans-serif;letter-spacing:0}.progress{padding-bottom:4px;color:#76776f;font-size:12px;font-weight:700;white-space:nowrap}

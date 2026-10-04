@@ -33,6 +33,7 @@ function save() {
 function render() {
   const tasks = todayTasks();
   const completed = tasks.filter(task => task.done).length;
+  document.body.classList.toggle("has-tasks", tasks.length > 0);
   dateElement.textContent = new Intl.DateTimeFormat(undefined, { weekday: "long", month: "long", day: "numeric" }).format(new Date());
   count.textContent = String(tasks.length);
   progress.textContent = `${completed} done`;
