@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2e9">
+  <title>ZoDo — today, simply</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="ZoDo home"><span class="brand-mark">Z<span class="brand-dot">.</span></span><span>ZoDo</span></a>
+      <span class="today-pill"><i class="ph ph-sun" aria-hidden="true"></i><span>One day at a time</span></span>
+    </header>
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="eyebrow-line"></span> YOUR DAILY SPACE</div>
+      <h1 id="page-title">What’s on<br>your <span>list today?</span></h1>
+      <p class="intro-copy">The little things count. Write them down, get them done.</p>
+      <p class="date-line" id="today-date"></p>
+    </section>
+    <section class="list-panel" aria-labelledby="tasks-heading">
+      <div class="panel-head">
+        <div><span class="section-kicker">THE PLAN</span><h2 id="tasks-heading">Today’s tasks <span id="task-count" class="count-badge">0</span></h2></div>
+        <span class="progress" id="progress">0 done</span>
+      </div>
+      <form id="task-form" class="task-form">
+        <label class="sr-only" for="task-input">New task</label>
+        <input id="task-input" name="task" type="text" maxlength="180" autocomplete="off" placeholder="Add something to do..." required>
+        <button type="submit" class="add-button"><i class="ph ph-plus" aria-hidden="true"></i><span>Add</span></button>
+      </form>
+      <ul id="task-list" class="task-list" aria-label="Today's tasks"></ul>
+      <div id="empty-state" class="empty-state">
+        <div class="empty-icon"><i class="ph ph-pencil-simple-line" aria-hidden="true"></i></div>
+        <h3>A fresh page.</h3><p>Add your first thing to do today.</p>
+      </div>
+    </section>
+    <footer class="footer"><span>Keep it simple. Keep it moving.</span><span class="footer-spark">✳</span></footer>
+  </main>
+</body>
+</html>
